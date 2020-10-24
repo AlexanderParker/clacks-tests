@@ -1,18 +1,12 @@
-// Implements a basic message logger, useful for profiling and debugging
-const fs = require('fs')
-      Logger = require('clacks-logger')
-
-/**
- * Set up some peers to test the logger plugin
- */
-
 // Allow self-signed certificate in development - don't do this on production.
 process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
 
-// Include clacks library
-var clacks = require ('clacks-p2p'),
-	key = fs.readFileSync('key.pem'),
-	cert = fs.readFileSync('cert.pem')
+// Implements a basic message logger, useful for profiling and debugging
+const fs = require('fs'),
+      Logger = require('clacks-logger'),
+	  clacks = require ('clacks-p2p'),
+	  key = fs.readFileSync('../ssl/key.pem'),
+	  cert = fs.readFileSync('../ssl/cert.pem')
 
 // Allocate 3 peers for testing
 console.log('\nInitialising 3 local clacks peers, each with send rate of 0.5 messages per second')
@@ -36,3 +30,6 @@ clacks2.enqueue('Hello Discworld!')
 // Now add a third peer
 console.log("\nAnnounce Peer 3's presence to Peer 1")
 clacks3.announce('localhost', 8001)
+
+// Nothing more to do but check the log output.
+console.log("\nCheck the ./logger/ directory to view logged messages for the three running clacks instances.")
