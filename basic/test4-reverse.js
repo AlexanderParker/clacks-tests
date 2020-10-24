@@ -2,10 +2,10 @@
 process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
 
 // Include clacks library
-var clacks = require ('clacks-p2p'),
-	fs = require('fs'),
-	key = fs.readFileSync('key.pem'),
-	cert = fs.readFileSync('cert.pem')
+const fs = require('fs'),
+	  clacks = require ('clacks-p2p'),
+	  key = fs.readFileSync('../ssl/key.pem'),
+	  cert = fs.readFileSync('../ssl/cert.pem')
 
 // Allocate 3 peers for testing
 console.log('\nInitialising 6th local clacks peer, with send rate of 0.5 messages per second')
