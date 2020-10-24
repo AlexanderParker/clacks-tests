@@ -60,7 +60,7 @@ function plugin(options) {
 process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
 
 // Include clacks library
-var clacks = require ('../index.js'),
+var clacks = require ('clacks-p2p'),
 	key = fs.readFileSync('key.pem'),
 	cert = fs.readFileSync('cert.pem')
 
