@@ -1,3 +1,9 @@
+# What is clacks-tests?
+
+This is a repository of tests and examples for the [clacks](https://github.com/AlexanderParker/clacks) p2p messaging system.
+
+# Basic Tests
+
 *Step 1: Run test.js*
 
 * This sets up 3 clacks "peers" on localhost port 8001, 8002, and 8003 respectively.
@@ -40,3 +46,12 @@ Note: keep at least test.js running in another console while you run test-revers
 * This sets up clacks peer #6 on port 8006
 * Peer 6 announces itself to Peer 1
 * Any time peer 6 recieves a message, it reverses the message string.
+
+
+# Contributing
+
+If this project interests you, all contributions are welcome, from pull requests to suggestions and bug reports.
+
+For clacks-tests specific issues, please use this [issue tracker](https://github.com/AlexanderParker/clacks-tests/issues) if you spot any problems, have general questions, ideas or feedback.
+
+For core clacks-p2p issues, please use the main [issue tracker](https://github.com/AlexanderParker/clacks/issues) instead.
