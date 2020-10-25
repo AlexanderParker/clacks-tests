@@ -1,26 +1,26 @@
-#Profiling
+# Profiling
 
 The scripts in these subfolders profile various dynamic features of the network. Based on analysis of the profiling results, adjustments can be made to improve message flow, peer discovery, and overall network resilliance.
 
-#Propagation Dynamics
+# Propagation Dynamics
 
-##Overview
+## Overview
 
 The propagation dynamics scripts set up a 20x20 grid of nodes, each initially connected to their direct and diagonal neighbours. A single message is introduced in the top-left node, and the message flow and peer discovery is recorded and visualised.
 
 The scripts generate an animated GIF - these have been converted to MP4 using ffmpeg to reduce filesize of the repository.
 
-##Scripts
+## Scripts
 
 * **test-message-flow.js** - The number of times the message visits each peer is recorded and visualised.
 * **test-peer-discovery.js** - The number of peers visible to each peer is recorded and visualised.
 * **test-peer-distance.js** - The maximum "distance" between peers is recorded and visualised.
 
-##Analysis & Results
+## Analysis & Results
 
 When new peers are added to a node's peer list, the initial code which selects the next peer to message chose the peer from the top of the new peers list. After visualising the dynamics of message propagation and peer discovery, the decision was made to select the next peer randomly from the new list, which significantly improved peer discovery dynamics.
 
-##Visualisation
+## Visualisation
 
 The following MP4-format files visualise two minutes of propagation through the 20x20 grid is rendered at 25 frames per second (total 3000 frames). 
 
