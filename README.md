@@ -7,6 +7,7 @@ This is a repository of tests and examples for the [clacks](https://github.com/A
 Test scripts and assets are organised into the following directories:
 
 * **./basic** - tests the basic / core features of clacks-p2p
+* **./dev** - playground for developing new plugins
 * **./plugins** - tests for individual clacks plugins
 * **./profiling** - scripts to analyse and profile various network dynamics
 * **./ssl** - self-signed certificate used by tests (*do not use for production purposes!*)

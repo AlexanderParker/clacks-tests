@@ -4,8 +4,9 @@
   "description": "Playground for testing clacks-p2p functionality.",
   "main": "index.js",
   "dependencies": {
-    "clacks-logger": "^0.1.0",
-    "clacks-p2p": "^0.3.1",
+    "clacks-logger": "^0.1.1",
+    "clacks-message-formatter": "^0.1.0",
+    "clacks-p2p": "^0.3.3",
     "gifencoder": "^2.0.1"
   },
   "devDependencies": {},
