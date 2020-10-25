@@ -5,7 +5,8 @@
   "main": "index.js",
   "dependencies": {
     "clacks-logger": "^0.1.0",
-    "clacks-p2p": "^0.3.1"
+    "clacks-p2p": "^0.3.1",
+    "gifencoder": "^2.0.1"
   },
   "devDependencies": {},
   "scripts": {
