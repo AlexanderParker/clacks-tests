@@ -1,7 +1,7 @@
 // Allow self-signed certificate in development - don't do this on production.
 process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
 
-// Implements a basic message logger, useful for profiling and debugging
+// Implements a basic message formatter for test purposes, handy for listening for and formatting certain types of message structures in the network.
 const fs = require('fs'),
 	  MessageFormatter = require('clacks-message-formatter'),
 	  clacks = require ('clacks-p2p'),
